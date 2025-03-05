@@ -7,4 +7,15 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # voir la liste des restaurants GET "restaurants"
+get "restaurants", to: "restaurants#index"
+
+  # ajouter un nveau restaurant GET "restaurants/new" + POST "restaurants"
+  get "restaurants/new", to: "restaurants#new", as: :new_restaurant
+  post "restaurants", to: "restaurants#create"
+
+  # voir les détails d'un restaurant GET "restaurants/38"
+
+  # user ajoute un nouvel avis GET "restaurants/38/reviews/new" + POST "restaurants/38/reviews"
 end

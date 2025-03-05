@@ -59,3 +59,6 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+gem "simple_form"
+gem 'faker', '~> 2.10', '>= 2.10.2'
